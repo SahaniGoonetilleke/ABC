@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+<style>
+    .rightNext {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 90%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    .leftPrev {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
 
 <head>
     <!-- Load d3.js -->
@@ -339,13 +358,19 @@
         </script>
 </div>
 </body>
-<!-- Clickable button -->
-<button type="button" onclick="">Next >> </button>
-<script src="scene1.html"></script>
-<script>
-    d3.select(id).html = "./scene1.html"
-    document.getElementById('test').innerHTML = ""
-    d3.select('test').html = "scene1.html";
-</script>
+<!-- Clickable button 
+    <button type="button" onclick="">Next >> </button>
+    <script src="scene1.html"></script>
+    <script>
+        d3.select(id).html = "./scene1.html"
+        document.getElementById('test').innerHTML = ""
+        d3.select('test').html = "scene1.html";
+    </script> -->
+
+<div class="rightNext">
+    <form method="get" action="./cP.html">
+        <button type="submit">Next >></button>
+    </form>
+</div>
 
 </html>
